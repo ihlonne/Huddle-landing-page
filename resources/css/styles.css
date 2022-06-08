@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-megneta: hsl(300, 69%, 71%);
+}
+
+html, body {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        text-align: left;
+    }
+}
+
+/* Background image */
+
+.bg__image {
+    background: url('/resources/images/bg-mobile.svg') no-repeat center / cover;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+    .bg__image {
+        background: url('/resources/images/bg-desktop.svg') no-repeat center / cover;
+    }
+}
+
+/* Header section */
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0; 
+    left: 0;
+    padding: 2rem;
+    height: 100px;
+    width: 100%;
+}
+
+.huddle-logo {
+    height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .huddle-logo {
+        height: 40px;
+    }
+}
+
+/* Hero-image */
+
+.container {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    height: 100vh;
+}
+
+.mockups-image img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 2rem;
+    }
+    
+    .mockups-image img {
+        width: 100%;
+    }
+}
+
+/* Information section */
+
+.huddle-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.huddle-info h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.huddle-info p {
+    margin-top: 1rem;
+    opacity: 0.9;
+    padding: 0 .350rem;
+}
+
+.register-btn {
+    border-radius: 2rem;
+    border: none;
+    margin-top: 2rem;
+    padding: .5rem 4rem;
+    color: var(--violet);
+    box-shadow: 2px 2px 2px hsl(256, 39%, 31%);
+}
+
+.register-btn a {
+    color: var(--violet);
+}
+
+@media only screen and (min-width: 768px) {
+    .huddle-info {
+        width: 35%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 4rem;
+    }
+
+    .huddle-info h1 {
+        font-size: 2.250rem;
+        margin-top: 4rem;
+    }
+
+    .register-btn {
+        padding: 1rem 4rem;
+    }
+
+    .register-btn:hover {
+        background: var(--soft-megneta);
+        color: #fff;
+    }
+}
+/* Social media buttons  */ 
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.socials {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    font-size: .750rem;
+    margin:.5rem;
+    padding: .250rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .social-media {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 2rem;
+    }
+
+    .socials:hover {
+        color: #ff52c1;
+        border: 1px solid #ff52c1;
+    }
+}
+
+/* Footer section */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 5rem; 
+}
+
+.attribution a { 
+    color: var(--soft-megneta); 
+}
+
+@media only screen and (min-width: 768px) {
+    .attribution {
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+    }
+}
+
