@@ -44,7 +44,7 @@ h1 {
 /* Background image */
 
 .bg__image {
-    background: url('../resources/images/bg-mobile.svg') no-repeat center / cover;
+    background: url('../images/bg-mobile.svg') no-repeat center / cover;
     position: absolute;
     top: 0; 
     left: 0;
@@ -55,7 +55,7 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     .bg__image {
-        background: url('../resources/images/bg-desktop.svg') no-repeat center / cover;
+        background: url('../images/bg-desktop.svg') no-repeat center / cover;
     }
 }
 
